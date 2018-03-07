@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: kubectl-oidc-helper
+
+# See OidcConfig.java
+# Refer to <issuer>/.well-known/openid-configuration
+oidc:
+  clientId: <client-id>
+  clientSecret: <client-secret>
+  issuerUri: <issuer-url>
+  accessTokenUri: <token-uri>
+  userAuthorizationUri: <auth-uri>
+  redirectUri: <redirect-uri>
+  jwkUrl: <jwk-url>
+  scope: openid
